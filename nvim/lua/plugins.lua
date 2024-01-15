@@ -51,8 +51,8 @@ return packer.startup(function(use)
   use({ "shaunsingh/nord.nvim" })
   use({ "cocopon/iceberg.vim" })
 
-  use({ "nvim-lualine/lualine.nvim" }) -- Statusline
-  use({ "windwp/nvim-autopairs" }) -- Autopairs, integrates with both cmp and treesitter
+  use({ "nvim-lualine/lualine.nvim" })    -- Statusline
+  use({ "windwp/nvim-autopairs" })        -- Autopairs, integrates with both cmp and treesitter
   use({ "kyazdani42/nvim-web-devicons" }) -- File icons
   use({ "akinsho/bufferline.nvim" })
 
@@ -79,15 +79,15 @@ return packer.startup(function(use)
 
   -- Rich command line
   use({ "folke/noice.nvim" })
-    -- dependencies
+  -- dependencies
   use({ "MunifTanjim/nui.nvim" })
   use({ "rcarriga/nvim-notify" })
 
   -- rust integration
 
   -- cmp plugins
-  use({ 'hrsh7th/nvim-cmp' }) -- completion plugin
-  use({ 'hrsh7th/cmp-path' }) -- path completions
+  use({ 'hrsh7th/nvim-cmp' })    -- completion plugin
+  use({ 'hrsh7th/cmp-path' })    -- path completions
   use({ 'hrsh7th/cmp-cmdline' }) -- cmdline completions
   use({ 'hrsh7th/cmp-nvim-lsp' })
   use({ 'hrsh7th/cmp-nvim-lua' })
@@ -96,37 +96,41 @@ return packer.startup(function(use)
   -- better launch screen
   use {
     'goolord/alpha-nvim',
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    config = function()
+      require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
     end
   }
 
   -- tree filer
   use({
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons",
-			"MunifTanjim/nui.nvim",
-			"3rd/image.nvim",
-			{
-				"s1n7ax/nvim-window-picker",
-				version = "2.*",
-			},
-		},
-	})
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+      "3rd/image.nvim",
+      {
+        "s1n7ax/nvim-window-picker",
+        version = "2.*",
+      },
+    },
+  })
 
   -- git
   use("dinhhuy258/git.nvim")
-	use("lewis6991/gitsigns.nvim")
+  use("lewis6991/gitsigns.nvim")
 
   -- colorizer
   use({ "norcalli/nvim-colorizer.lua" })
 
   use({ 'lewis6991/impatient.nvim' })
 
-  use ({ 'gen740/SmoothCursor.nvim' })
+  use({ 'gen740/SmoothCursor.nvim' })
+
+  use({ 'karb94/neoscroll.nvim' })
+
+  use({ 'numToStr/Comment.nvim' })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

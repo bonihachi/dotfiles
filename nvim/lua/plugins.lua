@@ -132,7 +132,13 @@ return packer.startup(function(use)
 
   use({ 'numToStr/Comment.nvim' })
 
-  use({ 'folke/which-key.nvim' })
+  use({
+    'folke/which-key.nvim',
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end
+  })
 
   use({ 'akinsho/toggleterm.nvim' })
 

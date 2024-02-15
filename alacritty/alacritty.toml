@@ -4,15 +4,15 @@ import = ["~/.config/alacritty/themes/themes/iceberg.toml"]
 size = 15
 
 [font.normal]
-family = "Monaspace Neon"
+family = "SauceCodePro Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "Monaspace Neon"
+family = "SauceCodePro Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Monaspace Neon"
+family = "SauceCodePro Nerd Font"
 style = "Italic"
 
 [window]

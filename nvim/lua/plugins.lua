@@ -57,7 +57,14 @@ return packer.startup(function(use)
   use({ "akinsho/bufferline.nvim" })
 
   -- LSP
-  use({ 'neovim/nvim-lspconfig' })
+  use({
+    'neovim/nvim-lspconfig',
+    init_options = {
+      userLanguages = {
+        rust = "html",
+      }
+    }
+  })
   use({ 'lighttiger2505/sqls' }) -- LSP for SQL
   use({ "williamboman/mason.nvim" })
   use({ "williamboman/mason-lspconfig.nvim" })

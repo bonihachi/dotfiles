@@ -57,9 +57,10 @@ return packer.startup(function(use)
   use({ "akinsho/bufferline.nvim" })
 
   -- LSP
-  use({ "neoclide/coc.nvim", branch = 'release' })
   use({ 'neovim/nvim-lspconfig' })
   use({ 'lighttiger2505/sqls' }) -- LSP for SQL
+  use({ "williamboman/mason.nvim" })
+  use({ "williamboman/mason-lspconfig.nvim" })
 
   -- Formatter
   use({ "MunifTanjim/prettier.nvim" })
@@ -91,7 +92,15 @@ return packer.startup(function(use)
   use({ 'hrsh7th/cmp-cmdline' }) -- cmdline completions
   use({ 'hrsh7th/cmp-nvim-lsp' })
   use({ 'hrsh7th/cmp-nvim-lua' })
+  use({ 'hrsh7th/cmp-buffer' })
+  use({ 'hrsh7th/cmp-vsnip' })
+  use({ 'hrsh7th/vim-vsnip' })
+  use({ 'hrsh7th/cmp-nvim-lsp-signature-help' })
   use({ 'onsails/lspkind-nvim' })
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+  })
 
   -- better launch screen
   use {
@@ -144,9 +153,13 @@ return packer.startup(function(use)
     require("toggleterm").setup()
   end }
 
-  use {
-    "williamboman/mason.nvim"
-  }
+
+  --Linter + Formatter
+  use({
+    "jose-elias-alvarez/null-ls.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+  })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/themes/iceberg.toml"]
+import = ["themes/themes/iceberg.toml"]
 
 [font]
 size = 15
@@ -19,5 +19,5 @@ style = "Italic"
 opacity = 0.9
 
 [shell]
-program = "/bin/zsh"
+program = "/usr/bin/bash"
 args = ["-l", "-c", "tmux a -t default || tmux new -s default\\;"]

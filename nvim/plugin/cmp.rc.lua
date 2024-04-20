@@ -35,16 +35,3 @@ cmp.setup({
     })
   }
 })
-
-cmp.setup.cmdline('/', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' } --ソース類を設定
-  }
-})
-cmp.setup.cmdline(":", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = "path" }, --ソース類を設定
-  },
-})

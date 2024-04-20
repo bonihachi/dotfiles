@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 local autocmd = vim.api.nvim_create_autocmd
 
 autocmd({ 'ModeChanged' }, {

@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 local status, prettier = pcall(require, "prettier")
 if (not status) then return end
 

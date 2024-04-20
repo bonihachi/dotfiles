@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 local status, impatient = pcall(require, 'impatient')
 
 if not status then

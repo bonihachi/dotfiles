@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 -- Lspkindのrequire
 local lspkind = require 'lspkind'
 --補完関係の設定

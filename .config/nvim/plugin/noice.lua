@@ -1,3 +1,7 @@
+if vim.g.vscode then
+	return
+end
+
 local noice = require("noice")
 
 local function myMiniView(pattern, kind)

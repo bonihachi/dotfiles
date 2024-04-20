@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 require('hlchunk').setup({
   chunk = {
     style = {

@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 local status, alpha = pcall(require, "alpha")
 if not status then
   return

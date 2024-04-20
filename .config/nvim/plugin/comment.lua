@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 require('Comment').setup({
   ---Add a space b/w comment and the line
   padding = true,

@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  return
+end
+
 local status, saga = pcall(require, "lspsaga")
 if (not status) then return end
 

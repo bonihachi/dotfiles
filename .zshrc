@@ -99,7 +99,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export JAVA_HOME="/opt/jdk"
-export DENO_INSTALL="/home/bonihachi/.deno"
-export PATH="$JAVA_HOME/bin:$DENO_INSTALL/bin:/home/bonihachi/package/node/bin:/snap/bin:/opt/gradle/bin:$PATH"

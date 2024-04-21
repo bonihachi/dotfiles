@@ -56,9 +56,7 @@ keymap("n", ";", ":", opts)
 keymap("n", "Y", "y$", opts)
 
 -- <Space>q で強制終了
-if not vim.g.vscode then -- load this setting if not using vscode
-  keymap("n", "<Space>q", ":<C-u>q!<Return>", opts)
-end
+keymap("n", "<Space>q", ":<C-u>q!<Return>", opts)
 
 -- ESC*2 でハイライトやめる
 keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)

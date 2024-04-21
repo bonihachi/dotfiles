@@ -1,7 +1,10 @@
 import = ["themes/themes/iceberg.toml"]
 
+[env]
+TERM = "alacritty-direct"
+
 [font]
-size = 15
+size = 18
 
 [font.normal]
 family = "SauceCodePro Nerd Font"

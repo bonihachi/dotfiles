@@ -1,8 +1,8 @@
 vim.cmd [[
 try
-  colorscheme iceberg
+	colorscheme iceberg
 catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-  set background=dark
+	colorscheme default
+	set background=dark
 endtry
 ]]

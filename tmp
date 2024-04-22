@@ -1,0 +1,23 @@
+set-option -g status-left "\
+#[fg=colour7, bg=colour241]#{?client_prefix,#[bg=colour167],} ❐ #S \
+#[fg=colour241, bg=colour237]#{?client_prefix,#[fg=colour167],}#{?window_zoomed_flag, 🔍,}"
+
+set-option -g status-right "\
+#[fg=colour214, bg=colour237] \
+#[fg=colour237, bg=colour214] #(~/dotfiles/tmux_scripts/music.sh) \
+#[fg=colour223, bg=colour237] #(~/dotfiles/tmux_scripts/uptime.sh) \
+#[fg=colour246, bg=colour237]  %b %d '%y\
+#[fg=colour109]  %H:%M \
+#[fg=colour248, bg=colour239]"
+
+set-window-option -g window-status-current-format "\
+#[fg=colour237, bg=colour214]\
+#[fg=colour239, bg=colour214] #I* \
+#[fg=colour239, bg=colour214, bold] #W \
+#[fg=colour214, bg=colour237]"
+
+set-window-option -g window-status-format "\
+#[fg=colour237,bg=colour239,noitalics]\
+#[fg=colour223,bg=colour239] #I \
+#[fg=colour223, bg=colour239] #W \
+#[fg=colour239, bg=colour237]"

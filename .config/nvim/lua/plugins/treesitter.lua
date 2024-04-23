@@ -7,6 +7,11 @@ return {
     build = ':TSUpdate',
     cmd = 'TSUpdateSync',
     opts = {
+        ensure_instaled = {
+            'vim',
+            'regex',
+        },
+        autoinstall = true,
         highlight = {
             enable = true,
         },

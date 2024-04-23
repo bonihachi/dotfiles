@@ -1,6 +1,7 @@
 return {
     'nvim-lualine/lualine.nvim',
     enabled = true,
+    event = 'VeryLazy',
     config = function()
         
         local lualine = require('lualine')
@@ -36,6 +37,7 @@ return {
                 theme = bubbles_theme,
                 component_separators = '|',
                 section_separators = { left = '', right = '' },
+                disabled_filetypes = { statusline = { "dashboard", "alpha", "starter" } },
             },
             sections = {
                 lualine_a = {

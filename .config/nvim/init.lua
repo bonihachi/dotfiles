@@ -7,5 +7,5 @@ else
 	require("options")
 	require("keymaps")
 	require("colorscheme")
-	require("plugins")
+	require("lazynvim")
 end

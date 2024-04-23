@@ -19,6 +19,11 @@ return {
             end,
             desc = "Git Explorer",
         },
+		{
+			"<C-f>",
+			"<cmd>Neotree focus<CR>",
+			desc = "Focus on NeoTree",
+		}
     },
     deactivate = function()
         vim.cmd([[Neotree close]])

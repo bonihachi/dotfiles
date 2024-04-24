@@ -22,7 +22,8 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
         {
-            "nvim-telescope/telescope-fzf-native.nvim", build = "make"
+            "nvim-telescope/telescope-fzf-native.nvim",
+			build = 'make',
         },
         "nvim-tree/nvim-web-devicons",
         "fdschmidt93/telescope-egrepify.nvim",

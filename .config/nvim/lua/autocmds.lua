@@ -23,16 +23,16 @@ autocmd({ "BufReadPost" }, {
 
 autocmd({ "TermOpen" }, {
 	pattern = { "*" },
-	command = "startinsert"
-})
-
-
-autocmd({ "TermOpen" }, {
-	pattern = { "*" },
-	command = "setlocal norelativenumber"
+	command = "startinsert",
 })
 
 autocmd({ "TermOpen" }, {
 	pattern = { "*" },
-	command = "setlocal nonumber"
+	command = "setlocal norelativenumber",
 })
+
+autocmd({ "TermOpen" }, {
+	pattern = { "*" },
+	command = "setlocal nonumber",
+})
+

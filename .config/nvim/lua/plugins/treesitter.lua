@@ -10,7 +10,10 @@ return {
         ensure_instaled = {
             'vim',
             'regex',
-			'lua'
+			'lua',
+			'markdown',
+			'markdown_inline',
+			'rust'
         },
         autoinstall = true,
         highlight = {

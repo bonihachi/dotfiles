@@ -10,6 +10,7 @@ return {
         ensure_instaled = {
             'vim',
             'regex',
+			'lua'
         },
         autoinstall = true,
         highlight = {

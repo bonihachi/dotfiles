@@ -4,18 +4,18 @@ import = ["themes/themes/iceberg.toml"]
 TERM = "alacritty-direct"
 
 [font]
-size = 20
+size = 18
 
 [font.normal]
-family = "SauceCodePro Nerd Font"
+family = "Moralerspace Neon NF"
 style = "Regular"
 
 [font.bold]
-family = "SauceCodePro Nerd Font"
+family = "Moralerspace Neon NF"
 style = "Bold"
 
 [font.italic]
-family = "SauceCodePro Nerd Font"
+family = "Moralerspace Neon NF"
 style = "Italic"
 
 [window]

@@ -1,5 +1,6 @@
 return {
 	"RRethy/vim-illuminate",
+	enabled = true,
 	event = "VeryLazy",
 	opts = {
 		delay = 200,
@@ -33,4 +34,3 @@ return {
 		{ "[[", desc = "Prev Reference" },
 	},
 }
-

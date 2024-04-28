@@ -2,9 +2,6 @@ return {
 	"stevearc/conform.nvim",
 	enabled = true,
 	event = "VeryLazy",
-	dependencies = {
-		"williamboman/mason.nvim",
-	},
 	opts = {
 		format_on_save = {
 			timeout_ms = 3000,

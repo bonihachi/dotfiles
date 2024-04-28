@@ -35,4 +35,3 @@ autocmd({ "TermOpen" }, {
 	pattern = { "*" },
 	command = "setlocal nonumber",
 })
-

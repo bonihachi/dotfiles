@@ -6,5 +6,5 @@ if vim.g.vscode then
 else
 	require("options")
 	require("keymaps")
-	require("lazynvim")
+	require("lazyvim")
 end

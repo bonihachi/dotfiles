@@ -14,8 +14,7 @@ return {
 			on_attach = function(client, bufnr)
 				-- disable highlighting by LSP to prevent a conflict with treesitter
 				client.server_capabilities.semanticTokensProvider = nil
-				vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
-			end,
+				vim.lsp.inlay_hint.enable(true, { bufnr = bufnr }) end,
 		})
 	end,
 }

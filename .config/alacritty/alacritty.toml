@@ -4,7 +4,7 @@ import = ["themes/themes/iceberg.toml"]
 TERM = "alacritty-direct"
 
 [font]
-size = 16
+size = 18
 
 [font.normal]
 family = "Moralerspace Argon NF"

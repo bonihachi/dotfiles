@@ -1,7 +1,10 @@
 return {
 	"neovim/nvim-lspconfig",
 	enabled = true,
-	event = "VeryLazy",
+	event = {
+		"BufReadPre",
+		"BufNewFile",
+	},
 	keys = {
 		{
 			"gd",

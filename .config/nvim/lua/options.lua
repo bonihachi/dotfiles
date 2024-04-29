@@ -1,6 +1,6 @@
 local options = {
 	encoding = "utf-8",
-	fileencoding = "utf-8",
+	fileencodings = "euc-jp,sjis,utf-8",
 	title = true,
 	backup = false,
 	clipboard = "unnamedplus",

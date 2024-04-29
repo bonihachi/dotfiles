@@ -7,4 +7,5 @@ else
 	require("options")
 	require("keymaps")
 	require("lazyvim")
+	require("diagnostics")
 end

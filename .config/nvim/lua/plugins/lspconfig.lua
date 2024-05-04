@@ -21,6 +21,7 @@ return {
 			vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 		end
 
+		-- set up rust-analyzer
 		require("lspconfig").rust_analyzer.setup({
 			settings = {
 				["rust-analyzer"] = {
@@ -28,10 +29,29 @@ return {
 						command = "clippy",
 					},
 				},
-				on_attach = on_attach,
 			},
+			on_attach = on_attach,
 		})
+
+		-- set up clangd config
 		require("lspconfig").clangd.setup({
+			on_attach = on_attach,
+		})
+
+		require("lspconfig").lua_ls.setup({
+			settings = {
+				Lua = {
+					workspace = {
+						checkThirdParty = false,
+					},
+					codeLens = {
+						enable = true,
+					},
+					completion = {
+						callSnippet = "Replace",
+					},
+				},
+			},
 			on_attach = on_attach,
 		})
 	end,

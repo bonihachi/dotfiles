@@ -8,7 +8,7 @@ return {
 	keys = {
 		{
 			"gd",
-			vim.lsp.buf.definition(),
+			"<cmd>lua vim.lsp.buf.definition()<CR>",
 			desc = "Definition jump",
 		},
 	},
@@ -35,6 +35,18 @@ return {
 
 		-- set up clangd config
 		require("lspconfig").clangd.setup({
+			cmd = {
+				"clangd",
+				"--background-index",
+				"--header-insertion=iwyu",
+				"--completion-style=detailed",
+				"--function-arg-placeholders",
+			},
+			init_options = {
+				usePlaceholders = true,
+				completeUnimported = true,
+				clangdFileStatus = true,
+			},
 			on_attach = on_attach,
 		})
 

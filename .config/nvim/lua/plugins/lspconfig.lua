@@ -18,7 +18,10 @@ return {
 			if client.server_capabilities.semanticTokensProvider then
 				client.server_capabilities.semanticTokensProvider = nil
 			end
-			vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+
+			if client.server_capabilities.inlayHintProvider then
+				vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+			end
 		end
 
 		-- set up rust-analyzer

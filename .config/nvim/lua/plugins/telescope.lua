@@ -13,12 +13,34 @@ return {
 		},
 		{
 			";f",
-			"<cmd>Telescope find_files hidden=true<cr>",
+			function()
+				local current_encoding = vim.fn.execute("set fileencoding?")
+
+				-- Extract the encoding value from the output
+				local current_encoding = string.match(current_encoding, "fileencoding=(%S+)")
+
+				if current_encoding then
+					vim.cmd("Telescope find_files hidden=true file_encoding=" .. current_encoding)
+				else
+					vim.cmd("Telescope find_files hidden=true")
+				end
+			end,
 			desc = "search [F]iles",
 		},
 		{
 			";g",
-			"<cmd>Telescope live_grep<cr>",
+			function()
+				local current_encoding = vim.fn.execute("set fileencoding?")
+
+				-- Extract the encoding value from the output
+				local current_encoding = string.match(current_encoding, "fileencoding=(%S+)")
+
+				if current_encoding then
+					vim.cmd("Telescope live_grep file_encoding=" .. current_encoding)
+				else
+					vim.cmd("Telescope live_grep")
+				end
+			end,
 			desc = "search by [G]rep",
 		},
 	},

@@ -30,6 +30,7 @@ keymap("n", "te", ":tabedit<Return>", opts)
 keymap("n", "gn", ":tabnew<Return>", opts)
 -- move tab
 keymap("n", "gh", "gT", opts)
+keymap("n", "<Tab>", "gT", opts)
 keymap("n", "gl", "gt", opts)
 
 -- Split window

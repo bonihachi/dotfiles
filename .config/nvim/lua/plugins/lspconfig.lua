@@ -24,8 +24,10 @@ return {
 			end
 		end
 
+		local lspconfig = require("lspconfig")
+
 		-- set up rust-analyzer
-		require("lspconfig").rust_analyzer.setup({
+		lspconfig.rust_analyzer.setup({
 			settings = {
 				["rust-analyzer"] = {
 					check = {
@@ -37,14 +39,25 @@ return {
 		})
 
 		-- set up clangd config
-		require("lspconfig").clangd.setup({
+		lspconfig.clangd.setup({
 			cmd = {
 				"clangd",
 				"--background-index",
 				"--header-insertion=iwyu",
 				"--completion-style=detailed",
 				"--function-arg-placeholders",
+				"--inlay-hints=true",
+				"--log=verbose",
+				"--clang-tidy",
 			},
+			filetypes = {
+				"c",
+				"cpp",
+			},
+			-- root_dir = function(fname)
+			-- 	return lspconfig.util.root_pattern(".clangd", ".clang-tidy")(fname) or vim.fn.getcwd()
+			-- end,
+			root_dir = lspconfig.util.root_pattern(".clangd", ".clang-tidy", "compile_flags.txt"),
 			init_options = {
 				usePlaceholders = true,
 				completeUnimported = true,
@@ -53,7 +66,7 @@ return {
 			on_attach = on_attach,
 		})
 
-		require("lspconfig").lua_ls.setup({
+		lspconfig.lua_ls.setup({
 			settings = {
 				Lua = {
 					workspace = {

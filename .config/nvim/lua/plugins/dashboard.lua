@@ -28,7 +28,7 @@ return {
 					{
 						action = "Neotree toggle",
 						desc = " Neotree",
-						icon = "",
+						icon = " ",
 						key = "t",
 					},
 					{

@@ -82,5 +82,7 @@ return {
 			},
 			on_attach = on_attach,
 		})
+
+		lspconfig.pylyzer.setup({})
 	end,
 }

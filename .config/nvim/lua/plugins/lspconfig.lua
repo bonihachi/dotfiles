@@ -83,6 +83,6 @@ return {
 			on_attach = on_attach,
 		})
 
-		lspconfig.pylyzer.setup({})
+		lspconfig.pyright.setup({})
 	end,
 }

@@ -7,7 +7,7 @@ set -g theme_date_format "+%F %H:%M"
 set -g theme_display_git_default_branch yes
 set -g theme_color_scheme nord
 
-if test (hostname) = "AD11340"
+if type -q hostname && test (hostname) = "AD11340"
 	set -x http_proxy http://192.168.91.4:8080
 	set -x https_proxy http://192.168.91.4:8080
 end

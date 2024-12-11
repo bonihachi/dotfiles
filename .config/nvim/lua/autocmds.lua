@@ -13,6 +13,11 @@ autocmd("BufEnter", {
 	command = "set fo-=c fo-=r fo-=o",
 })
 
+-- autocmd("BufEnter", {
+-- 	pattern = "{}",
+-- 	command = "Dashboard",
+-- })
+
 -- Restore cursor location when file is opened
 autocmd({ "BufReadPost" }, {
 	pattern = { "*" },

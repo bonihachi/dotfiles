@@ -56,6 +56,12 @@ return {
 						key = "g",
 					},
 					{
+						action = "ToggleTerm",
+						desc = " Terminal",
+						icon = " ",
+						key = ">",
+					},
+					{
 						action = 'lua require("persistence").load()',
 						desc = " Restore Session",
 						icon = " ",

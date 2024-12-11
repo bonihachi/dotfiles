@@ -30,7 +30,8 @@ keymap("n", "te", ":tabedit<Return>", opts)
 keymap("n", "gn", ":tabnew<Return>", opts)
 -- move tab
 keymap("n", "gh", "gT", opts)
-keymap("n", "<Tab>", "gt", opts)
+keymap("n", "<Tab>", ":BufferNext<CR>", opts)
+keymap("n", "<S-Tab>", ":BufferPrevious<CR>", opts)
 keymap("n", "gl", "gt", opts)
 
 -- Split window
@@ -57,10 +58,18 @@ keymap("n", ";", ":", opts)
 keymap("n", "Y", "y$", opts)
 
 -- <Space>q で強制終了
-keymap("n", "<Space>q", ":<C-u>q!<Return>", opts)
+-- 	keymap("n", "<Space>q", ":<C-u>q!<Return>", opts)
+
+vim.keymap.set("n", "<Space>q", function()
+	if vim.fn.bufname("%") == "" then
+		vim.cmd([[q!]])
+	else
+		vim.cmd([[BufferClose]])
+	end
+end, { silent = true })
 
 -- ESC*2 でハイライトやめる
-keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
+keymap("n", "<Esc><Esc>", ":noh<Return>", opts)
 
 -- terminal
 keymap("n", "ts", ":ToggleTerm<CR>", opts) -- open terminal window by bsplit

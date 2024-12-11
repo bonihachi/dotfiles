@@ -11,3 +11,13 @@ if type -q hostname && test (hostname) = "AD11340"
 	set -x http_proxy http://192.168.91.4:8080
 	set -x https_proxy http://192.168.91.4:8080
 end
+
+neofetch
+
+## environment variables
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+set --export EDITOR nvim
+set --export TERM foot

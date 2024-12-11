@@ -63,11 +63,6 @@
         "when": "sideBarFocus"
     },
     {
-        "key": "q",
-        "command": "workbench.action.closeSidebar",
-        "when": "sideBarFocus"
-    },
-    {
         "key": "ctrl+t",
         "command": "workbench.explorer.fileView.focus",
         "when": "!sideBarVisible"

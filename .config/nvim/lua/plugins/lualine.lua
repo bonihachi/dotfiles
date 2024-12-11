@@ -4,7 +4,8 @@ return {
 	event = "VeryLazy",
 	opts = {
 		options = {
-			theme = "iceberg_dark",
+			-- theme = "iceberg_dark",
+			theme = "palenight",
 			disabled_filetypes = {
 				statusline = {
 					"dashboard",

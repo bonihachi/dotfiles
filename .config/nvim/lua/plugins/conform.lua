@@ -10,6 +10,16 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			rust = { "rustfmt" },
+			c = { "clang_format" },
+			cpp = { "clang_format" },
 		},
+		formatters = {
+			clang_format = {
+			  prepend_args = { '--style=file', '--fallback-style=LLVM' },
+			},
+			shfmt = {
+			  prepend_args = { '-i', '4' },
+			},
+		}
 	},
 }

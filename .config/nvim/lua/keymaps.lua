@@ -60,13 +60,13 @@ keymap("n", "Y", "y$", opts)
 -- <Space>q で強制終了
 -- 	keymap("n", "<Space>q", ":<C-u>q!<Return>", opts)
 
-vim.keymap.set("n", "<Space>q", function()
-	if vim.fn.bufname("%") == "" then
-		vim.cmd([[q!]])
-	else
-		vim.cmd([[BufferClose]])
-	end
-end, { silent = true })
+-- vim.keymap.set("n", "<Space>q", function()
+-- 	if vim.fn.bufname("%") == "" then
+-- 		vim.cmd([[q!]])
+-- 	else
+-- 		vim.cmd([[BufferClose]])
+-- 	end
+-- end, { silent = true })
 
 -- ESC*2 でハイライトやめる
 keymap("n", "<Esc><Esc>", ":noh<Return>", opts)

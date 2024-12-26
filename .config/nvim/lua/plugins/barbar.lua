@@ -17,7 +17,9 @@ return {
 		sidebar_filetypes = {
 			["neo-tree"] = true,
 		},
-		closable = false,
+		icons = {
+			button = false,
+		},
 	},
 	version = "^1.0.0", -- optional: only update when a new 1.x version is released
 	event = "VeryLazy",

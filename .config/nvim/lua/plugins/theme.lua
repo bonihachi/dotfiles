@@ -7,10 +7,10 @@ return {
 	-- "mhartington/oceanic-next",
 	-- "tiagovla/tokyodark.nvim",
 	-- "mhartington/oceanic-next",
-	"kyazdani42/blue-moon",
+	"EdenEast/nightfox.nvim",
 	enabled = true,
 	event = "VeryLazy",
 	config = function()
-		vim.cmd.colorscheme("blue-moon")
+		vim.cmd.colorscheme("nightfox")
 	end,
 }

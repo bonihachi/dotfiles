@@ -42,6 +42,9 @@ local options = {
 	splitbelow = false, -- オンのとき、ウィンドウを横分割すると新しいウィンドウはカレントウィンドウの下に開かれる
 	splitright = false, -- オンのとき、ウィンドウを縦分割すると新しいウィンドウはカレントウィンドウの右に開かれる
 	laststatus = 3, -- ステータスラインを画面下部だけにする
+	fillchars = {
+		eob = " ", -- disable tilde after the end of buffer
+	},
 }
 
 vim.opt.shortmess:append("c")

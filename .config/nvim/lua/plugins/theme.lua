@@ -5,10 +5,12 @@ return {
 	-- "rebelot/kanagawa.nvim",
 	-- "jim-at-jibba/ariake.nvim",
 	-- "mhartington/oceanic-next",
-	"tiagovla/tokyodark.nvim",
+	-- "tiagovla/tokyodark.nvim",
+	-- "mhartington/oceanic-next",
+	"kyazdani42/blue-moon",
 	enabled = true,
 	event = "VeryLazy",
 	config = function()
-		vim.cmd.colorscheme("tokyodark")
+		vim.cmd.colorscheme("blue-moon")
 	end,
 }

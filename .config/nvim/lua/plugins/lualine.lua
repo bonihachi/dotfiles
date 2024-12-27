@@ -12,8 +12,11 @@ return {
 					"alpha",
 					"starter",
 					"lazy",
+					"neo-tree",
 				},
 			},
+			always_divide_middle = true,
+			globalstatus = false,
 		},
 	},
 }

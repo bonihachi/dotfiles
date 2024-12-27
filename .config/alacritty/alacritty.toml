@@ -1,3 +1,5 @@
+[general]
+import = ["themes/themes/nightfox.toml"]
 
 [env]
 TERM = "alacritty-direct"
@@ -19,9 +21,6 @@ style = "Italic"
 
 [window]
 opacity = 0.9
-
-[general]
-import = ["themes/themes/iceberg.toml"]
 
 [terminal]
 

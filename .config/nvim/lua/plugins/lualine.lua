@@ -5,7 +5,7 @@ return {
 	opts = {
 		options = {
 			-- theme = "iceberg_dark",
-			theme = "palenight",
+			-- theme = "nightfox",
 			disabled_filetypes = {
 				statusline = {
 					"dashboard",
@@ -19,4 +19,8 @@ return {
 			globalstatus = false,
 		},
 	},
+	config = function()
+		vim.cmd("colorscheme nightfox")
+		require("lualine").setup()
+	end,
 }

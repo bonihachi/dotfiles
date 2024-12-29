@@ -5,6 +5,7 @@ return {
 	"EdenEast/nightfox.nvim",
 	-- "kdheepak/monochrome.nvim",
 	enabled = true,
+	lazy = false,
 	event = "VeryLazy",
 	config = function()
 		vim.cmd.colorscheme("nightfox")

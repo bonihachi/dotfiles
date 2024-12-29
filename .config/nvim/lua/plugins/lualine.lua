@@ -19,8 +19,8 @@ return {
 			globalstatus = false,
 		},
 	},
-	config = function()
+	config = function(_, opts)
 		vim.cmd("colorscheme nightfox")
-		require("lualine").setup()
+		require("lualine").setup(opts)
 	end,
 }

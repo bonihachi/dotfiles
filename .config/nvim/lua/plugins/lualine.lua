@@ -20,7 +20,7 @@ return {
 		},
 	},
 	config = function(_, opts)
-		vim.cmd("colorscheme nightfox")
+		vim.cmd("colorscheme")
 		require("lualine").setup(opts)
 	end,
 }

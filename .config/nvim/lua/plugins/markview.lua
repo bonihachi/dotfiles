@@ -8,7 +8,7 @@ return {
 		local presets = require("markview.presets").headings
 
 		require("markview").setup({
-			headings = presets.glow,
+			headings = presets.slanted,
 		})
 	end,
 }

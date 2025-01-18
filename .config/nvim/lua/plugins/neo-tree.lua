@@ -38,6 +38,9 @@ return {
 				hide_dotfiles = false,
 				hide_gitignored = true,
 			},
+			window = {
+				width = 30,
+			},
 		},
 		git_status = {
 			window = {
